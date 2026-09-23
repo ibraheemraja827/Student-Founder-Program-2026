@@ -1,28 +1,34 @@
 // WHY ATTEND - Show / Hide Details
 
-subscribeBtn = document.getElementById("subscribeBtn");
+// NEWSLETTER SUBSCRIBE
+
+const subscribeBtn = document.getElementById("subscribeBtn");
 const newsletterEmail = document.getElementById("newsletterEmail");
 const subscribeMessage = document.getElementById("subscribeMessage");
 
-subscribeBtn.addEventListener("click", function () {
+if (subscribeBtn && newsletterEmail && subscribeMessage) {
 
-    const email = newsletterEmail.value.trim();
+    subscribeBtn.addEventListener("click", function () {
 
-    if (email === "") {
-        subscribeMessage.textContent = "Please enter your email address.";
-        return;
-    }
+        const email = newsletterEmail.value.trim();
 
-    if (!email.includes("@")) {
-        subscribeMessage.textContent = "Please enter a valid email.";
-        return;
-    }
+        if (email === "") {
+            subscribeMessage.textContent = "Please enter your email address.";
+            return;
+        }
 
-    subscribeMessage.textContent =
-        "Thank you! You are subscribed to our updates.";
+        if (!email.includes("@")) {
+            subscribeMessage.textContent = "Please enter a valid email.";
+            return;
+        }
 
-    newsletterEmail.value = "";
-});
+        subscribeMessage.textContent =
+            "Thank you! You are subscribed to our updates.";
+
+        newsletterEmail.value = "";
+    });
+
+}
 
 document.addEventListener("DOMContentLoaded", function () {
 

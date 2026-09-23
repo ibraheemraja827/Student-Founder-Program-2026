@@ -9067,3 +9067,120 @@ body {
         opacity: 1 !important;
     }
 }
+/* ===== MOBILE SPONSOR LOGO FIX ===== */
+@media screen and (max-width: 600px) {
+
+    .sponsors-section .sponsor-logos {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        width: 100% !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .sponsors-section .sponsor-card {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: 100% !important;
+        min-height: 130px !important;
+        height: auto !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-direction: column !important;
+        overflow: visible !important;
+        position: relative !important;
+    }
+
+    .sponsors-section .sponsor-card img {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        width: auto !important;
+        max-width: 85% !important;
+        height: auto !important;
+        max-height: 75px !important;
+        object-fit: contain !important;
+        margin: 0 auto 12px !important;
+        position: relative !important;
+    }
+
+    .sponsors-section .sponsor-card span {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        position: static !important;
+    }
+}
+/* ===== SPONSORS MOBILE FIX ===== */
+@media screen and (max-width: 600px) {
+
+    .sponsors-section {
+        padding: 80px 18px !important;
+        overflow: visible !important;
+    }
+
+    .sponsors-section .sponsor-category {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto 50px !important;
+        overflow: visible !important;
+    }
+
+    .sponsors-section .sponsor-logos {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
+        width: 100% !important;
+        height: auto !important;
+        overflow: visible !important;
+    }
+
+    .sponsors-section .sponsor-card {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        width: 190px !important;
+        min-width: 190px !important;
+        min-height: 125px !important;
+        height: auto !important;
+
+        visibility: visible !important;
+        opacity: 1 !important;
+        overflow: visible !important;
+    }
+
+    .sponsors-section .sponsor-card img {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        width: 115px !important;
+        height: 55px !important;
+        max-width: 115px !important;
+        max-height: 55px !important;
+
+        object-fit: contain !important;
+        object-position: center !important;
+
+        position: relative !important;
+        z-index: 10 !important;
+
+        margin: 0 auto !important;
+    }
+
+    .sponsors-section .sponsor-card span {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        position: relative !important;
+        z-index: 10 !important;
+
+        margin-top: 12px !important;
+    }
+}
