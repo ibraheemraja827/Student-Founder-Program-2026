@@ -9018,3 +9018,52 @@ body {
     object-fit: cover;
     border-radius: 20px;
 }
+/* =====================================================
+   MOBILE SPONSOR LOGOS FIX
+===================================================== */
+
+@media (max-width: 600px) {
+
+    /* Sponsor cards ko hide na hone do */
+    .sponsor-card,
+    .partner-card,
+    .sponsor-logo-card,
+    .venue-partner-card {
+        display: flex !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        min-height: 90px !important;
+        overflow: visible !important;
+    }
+
+    /* Logos visible */
+    .sponsor-card img,
+    .partner-card img,
+    .sponsor-logo-card img,
+    .venue-partner-card img {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+
+        max-width: 80% !important;
+        width: auto !important;
+        height: auto !important;
+
+        max-height: 55px !important;
+
+        object-fit: contain !important;
+    }
+
+    /* Text-based venue partner names */
+    .sponsor-card h4,
+    .partner-card h4,
+    .venue-partner-card h4 {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
